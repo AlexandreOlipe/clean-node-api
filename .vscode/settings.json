@@ -1,3 +1,5 @@
 {
-  "typescript.format.enable": false
+  "typescript.format.enable": false,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.format.semicolons": "remove"
 }
