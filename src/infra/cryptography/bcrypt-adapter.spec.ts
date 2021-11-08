@@ -1,11 +1,11 @@
 import bcrypt from 'bcrypt'
 import { BcryptAdapter } from './bcrypt-adapter'
 
-jest.mock('bcrypt', () => ({
-  async hash (): Promise <string> {
-    return await new Promise(resolve => resolve('valid_hash'))
-  }
-}))
+// jest.mock('bcrypt', () => ({
+//   async hash (): Promise <string> {
+//     return await new Promise(resolve => resolve('valid_hash'))
+//   }
+// }))
 
 const salt = 12
 const makeSut = (): BcryptAdapter => {
